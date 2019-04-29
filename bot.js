@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
+    let channel = member.guild.channels.find('name', '123654');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -37,7 +37,7 @@ client.on('guildMemberAdd', member => {
         .setColor('RED')
         .setFooter(`====شكرا للاستمتاع====`, ' https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
     
-    var channel =member.guild.channels.find('name', 'welcome')
+    var channel =member.guild.channels.find('name', '123654')
     if (!channel) return;
     channel.send({embed : embed});
     })
